@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding:0;
+}
+header {
+    display:flex;
+    justify-content: end;
+    height: 60px;
+    width:100%;
+    align-items: center;
+    gap:10px
+}
+.bolinha1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:42px;
+    height:42px;
+    border-radius: 21px;
+}
+.bolinha2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:42px;
+    height:42px;
+    border-radius: 21px;
+    margin-right:10px;
+}
+.bolinha1:hover ,.bolinha2:hover{
+    background-color: rgba(174, 172, 172, 0.412);
+}
+.bolinha2 img {
+    width:36px;
+    height: 36px;
+    border-radius: 18px;
+    
+}
+.links {
+    text-decoration: none;
+    color: rgba(27, 26, 26, 0.804);
+}
+.links:hover {
+    text-decoration: underline 1px;
+}
+.bento-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 4px); /* Fixa a largura das colunas */
+    grid-template-rows: repeat(3, 4px);    /* Fixa a altura das linhas */
+    gap: 2px;                              /* Diminua este valor para aproximar os pontos */
+    width: max-content;                    /* Garante que o container não estique */
+    cursor: pointer;
+}
+
+.bento-menu span {
+    display:block;
+    background-color: #555;                /* Cor cinza da imagem */
+    border-radius: 50%;
+    width: 4px;                            /* Tamanho exato do ponto */
+    height: 4px;
+}
+.foto-do-google {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 155px;
+    margin: 0px 0px 30px 0px;
+}
+.foto-png {
+    width: 300px;
+    height:auto;
+}
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:50px;
+    gap:30px;
+    margin-bottom: 30px;
+}
+.barra-pesquisa {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width:700px;
+    height:50px;
+    border: rgba(55, 54, 54, 0.199) 1px solid;
+    border-radius: 26px;
+}
+.mais {
+    font-size: 40px;
+    color: rgb(101, 100, 100);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+textarea {
+    font-size:18px;
+    width: 600px;
+    height: 40px;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+.barra-pesquisa:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.pesquisa .icone {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:140px;
+    height:40px;
+    border-radius: 12px;
+    color: rgb(43, 42, 42);
+    background-color: rgba(241, 240, 240, 0.432);
+    text-decoration: none;
+}
+.icone:hover {
+    border: rgba(101, 101, 101, 0.199) 1px solid;
+}
+.resto {
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    width:100%;
+    height:290px;
+}
+.brasil, .utilidades {
+    display:flex;
+    background-color: rgba(223, 222, 222, 0.449);
+    border-bottom: 1px rgba(153, 152, 152, 0.497) solid;
+    width:100%;
+    height:50px;
+    color: rgba(27, 26, 26, 0.804);
+    align-items: center;
+    padding-left:30px;
+    padding-right:30px;
+}
+.utilidades {
+    justify-content: space-between;
+
+}
